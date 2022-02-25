@@ -1,3 +1,6 @@
+// Kristen Klimisch
+// CPSC5042
+// HW 3 - Programming
 
 #include <stdio.h>
 #include <pthread.h>
@@ -17,8 +20,6 @@ void* threadfunc(void * arg)
 
     //critical section
     j += val;
-
-    sleep(1);
 
    pthread_mutex_unlock(&mutex);
     pthread_exit(NULL);
